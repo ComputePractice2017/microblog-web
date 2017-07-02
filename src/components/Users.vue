@@ -4,12 +4,12 @@
         <table class="table">
             <tr>
                 <th>Name</th>
-                <th>Stat</th>
+                <th>My thoughts</th>
             </tr>
             <tbody>
                 <tr v-for="users in users_list">
                     <td>{{users.name}}</td>
-                    <td>{{users.status}}</td>
+                    <td>{{users.message}}</td>
                 </tr>
             </tbody>
         </table>
@@ -26,11 +26,11 @@ export default {
       users_list: [
         {
           'name': 'Ainz',
-          'status': 'Overlord'
+          'message': 'Overlord'
         },
         {
           'name': 'Albedo',
-          'status': 'General'
+          'message': 'General'
         }
       ]
     }
@@ -39,5 +39,8 @@ export default {
 </script>
 
 <style>
-
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 </style>

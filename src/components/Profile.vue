@@ -1,84 +1,91 @@
 import '../CSS/Styles.css'
 <template>
-  <div class="Users">
+  <div class="Profile">
     <div class="container-fluid" style="background-color:black;">
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Микро-блог</a>
+            <a class="navbar-brand" href="#">РњРёРєСЂРѕ-Р±Р»РѕРі</a>
           </div>
           <ul class="nav navbar-nav">
             <li class="active">
-              <!--<a href="Profile">Мой профиль</a>-->
-              <router-link to="/Profile">Мой профиль</router-link>
+              <a href="#">РњРѕР№ РїСЂРѕС„РёР»СЊ</a>
             </li>
           </ul>
           <form class="navbar-form navbar-left">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Что Вам угодно?">
+              <input type="text" class="form-control" placeholder="Р§С‚Рѕ Р’Р°Рј СѓРіРѕРґРЅРѕ?">
             </div>
-            <button type="submit" class="btn btn-default">Сейчас найдём!</button>
+            <button type="submit" class="btn btn-default">РЎРµР№С‡Р°СЃ РЅР°Р№РґС‘Рј!</button>
           </form>
         </div>
       </nav>
       <div class="col-sm-12 col-md-12" style="background-color:lavender;">
-        <p>Лента</p>
+        <p>Р›РµРЅС‚Р°</p>
         <div class="row">
-          <div class="col-sm-6 col-md-3 supp" style="background-color:grey;">
-            <H2>Предложка</H2>
+          <div class="col-sm-6 col-md-3 supp" style="background-color:SkyBlue;">
             <p>
-  
+              <img class="iconautor" src="http://cbcbberkeley.com/wp-content/uploads/2016/06/marijuanaleaf-200x201.gif" alt="..." style="float: left">
+              <p class="autor">Crathos
+                    <span class="autortwitter">@one_shot В· 13 mar.</span>
+                  </p>
+              <form class="navbar-form navbar-left">
+                <div class="form-twit">
+                  <input type="text" class="form-control" placeholder="Р§С‚Рѕ Р·Р° РЅРѕРІРѕСЃС‚СЊ?">
+                </div>
+                <button type="submit" class="btn btn-default">Р”РѕР±Р°РІРёС‚СЊ С‚РІРёС‚</button>
+              </form>
             </p>
           </div>
-          <!--Блок фида-->
+          <!--Р‘Р»РѕРє С„РёРґР°-->
           <div class="col-sm-6 col-md-6 feed" style="background-color:pink;">
             <div class="row show-grid">
-              <!--Блок самого твита в фиде-->
+              <!--Р‘Р»РѕРє СЃР°РјРѕРіРѕ С‚РІРёС‚Р° РІ С„РёРґРµ-->
               <div class="col-sm-3 col-md-3 col-lg-12 twit">
                 <div class="caja tweet">
                   <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
                   <p class="autor">Arthas
-                    <span class="autortwitter">@non_lich_king · 16 mar.</span>
+                    <span class="autortwitter">@non_lich_king В· 16 mar.</span>
                   </p>
-                  <p>Я становлюсь королём, отец!</p>
-                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_1" class="img_lenta_tweet">
+                  <p>РЇ СЃС‚Р°РЅРѕРІР»СЋСЃСЊ РєРѕСЂРѕР»С‘Рј, РѕС‚РµС†!</p>
+                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Р—Р°РіР»СѓС€РєР°_1" class="img_lenta_tweet">
                 </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-12 twit">
                 <div class="caja tweet">
                   <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
                   <p class="autor">Author_2
-                    <span class="autortwitter">@2 · 16 mar.</span>
+                    <span class="autortwitter">@2 В· 16 mar.</span>
                   </p>
                   <p>twit_2</p>
-                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_2" class="img_lenta_tweet">
+                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Р—Р°РіР»СѓС€РєР°_2" class="img_lenta_tweet">
                 </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-12 twit">
                 <div class="caja tweet">
                   <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
                   <p class="autor">Author_3
-                    <span class="autortwitter">@3 · 16 mar.</span>
+                    <span class="autortwitter">@3 В· 16 mar.</span>
                   </p>
                   <p>twit_3</p>
-                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_3" class="img_lenta_tweet">
+                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Р—Р°РіР»СѓС€РєР°_3" class="img_lenta_tweet">
                 </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-12 twit">
                 <div class="caja tweet">
                   <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
                   <p class="autor">Author_4
-                    <span class="autortwitter">@4 · 16 mar.</span>
+                    <span class="autortwitter">@4 В· 16 mar.</span>
                   </p>
                   <p>twit_4</p>
-                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_4" class="img_lenta_tweet">
+                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Р—Р°РіР»СѓС€РєР°_4" class="img_lenta_tweet">
                 </div>
               </div>
             </div>
           </div>
-          <!--Блок для фильтрации твитов. Пока прикручен только макет datepicker'а-->
+          <!--Р‘Р»РѕРє РґР»СЏ С„РёР»СЊС‚СЂР°С†РёРё С‚РІРёС‚РѕРІ. РџРѕРєР° РїСЂРёРєСЂСѓС‡РµРЅ С‚РѕР»СЊРєРѕ РјР°РєРµС‚ datepicker'Р°-->
           <div class="col-sm-6 col-md-3 filter" style="background-color:orange;">
-            <h2>Фильтр по дате</h2>
+            <h2>Р¤РёР»СЊС‚СЂ РїРѕ РґР°С‚Рµ</h2>
             <p>
               <div class="col-10">
                 <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
@@ -88,6 +95,16 @@ import '../CSS/Styles.css'
                     <span class="glyphicon glyphicon-th"></span>
                   </div>
                 </div>
+              </div>
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-3 filter" style="background-color:SkyBlue;">
+            <h2>РРЅС‚РµСЂРµСЃРЅС‹Рµ СЃС‚СЂР°РЅРёС†С‹</h2>
+            <p>
+              <div class="list-group">
+                <button type="button" class="list-group-item">first</button>
+                <button type="button" class="list-group-item">second</button>
+                <button type="button" class="list-group-item">therd</button>
               </div>
             </p>
           </div>

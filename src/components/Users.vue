@@ -15,7 +15,8 @@ import '../CSS/Styles.css'
           </ul>
           <form class="navbar-form navbar-left">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Что Вам угодно?">
+              <input type="text" class="form-control" placeholder="Что Вам угодно?" v-model="search">
+              {{search}}
             </div>
             <button type="submit" class="btn btn-default">Сейчас найдём!</button>
           </form>
@@ -32,7 +33,7 @@ import '../CSS/Styles.css'
           </div>
           <!--Блок фида-->
           <div class="col-sm-6 col-md-6 feed" style="background-color:pink;">
-            <div class="row show-grid" v-for="user in users_list">
+            <div class="row show-grid" v-for="user in twits_list">
               <!--Блок самого твита в фиде-->
               <div class="col-sm-3 col-md-3 col-lg-12 twit">
                 <div class="caja tweet">
@@ -86,7 +87,20 @@ export default {
           'message': 'General'
         }
       ],
+      search: '',
       newvar: 'gdgd'
+    }
+  },
+  computed: {
+    twits_list: function () {
+      var search = this.search
+      var filterFun = function (item) {
+        return item.name.includes(search)
+      }
+      if (this.search !== '') {
+        return this.twits_list.filter(filterFun)
+      }
+      return this.users_list
     }
   }
 }

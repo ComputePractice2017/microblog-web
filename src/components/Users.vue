@@ -32,46 +32,19 @@ import '../CSS/Styles.css'
           </div>
           <!--Блок фида-->
           <div class="col-sm-6 col-md-6 feed" style="background-color:pink;">
-            <div class="row show-grid">
+            <div class="row show-grid" v-for="user in users_list">
               <!--Блок самого твита в фиде-->
               <div class="col-sm-3 col-md-3 col-lg-12 twit">
                 <div class="caja tweet">
                   <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
-                  <p class="autor">Arthas
-                    <span class="autortwitter">@non_lich_king · 16 mar.</span>
+                  <!--Имя автора твита-->
+                  <p class="autor">{{user.name}}
+                    <!--Тэг автора-->
+                    <span class="autortwitter">@{{user.name}} · 16 mar.</span>
                   </p>
-                  <p>Я становлюсь королём, отец!</p>
+                  <!--Текст твита-->
+                  <p>{{user.message}}</p>
                   <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_1" class="img_lenta_tweet">
-                </div>
-              </div>
-              <div class="col-sm-3 col-md-3 col-lg-12 twit">
-                <div class="caja tweet">
-                  <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
-                  <p class="autor">Author_2
-                    <span class="autortwitter">@2 · 16 mar.</span>
-                  </p>
-                  <p>twit_2</p>
-                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_2" class="img_lenta_tweet">
-                </div>
-              </div>
-              <div class="col-sm-3 col-md-3 col-lg-12 twit">
-                <div class="caja tweet">
-                  <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
-                  <p class="autor">Author_3
-                    <span class="autortwitter">@3 · 16 mar.</span>
-                  </p>
-                  <p>twit_3</p>
-                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_3" class="img_lenta_tweet">
-                </div>
-              </div>
-              <div class="col-sm-3 col-md-3 col-lg-12 twit">
-                <div class="caja tweet">
-                  <img class="iconautor" src="https://vignette2.wikia.nocookie.net/heroesofthestorm/images/e/e2/W3_Prince_Arthas_Portrait.jpg/revision/latest?cb=20170428003131" alt="..." style="float: left">
-                  <p class="autor">Author_4
-                    <span class="autortwitter">@4 · 16 mar.</span>
-                  </p>
-                  <p>twit_4</p>
-                  <img src="https://i.ytimg.com/vi/OtKAYaoFkfY/maxresdefault.jpg" alt="Заглушка_4" class="img_lenta_tweet">
                 </div>
               </div>
             </div>

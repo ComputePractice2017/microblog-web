@@ -31,9 +31,9 @@ import '../CSS/Styles.css'
                   </p>
               <form class="navbar-form navbar-left">
                 <div class="form-twit">
-                  <input type="text" class="form-control" placeholder="Что за новость?">
+                  <input type="text" class="caja tweet" placeholder="Что за новость?">
                 </div>
-                <button type="submit" class="btn btn-default">Добавить твит</button>
+                <button v-on:click="addnewtwit" class="btn btn-default">Добавить твит</button>
               </form>
             </p>
           </div>
@@ -130,7 +130,11 @@ export default {
           'message': 'General'
         }
       ],
-      newvar: 'gdgd'
+      newtwit: {
+        addnewtwit: function () {
+          this.users_list.push(this.users_list)
+        }
+      }
     }
   }
 }

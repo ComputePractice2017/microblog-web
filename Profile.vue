@@ -35,7 +35,6 @@ import '../CSS/Styles.css'
                 </div>
                 <button v-on:click="addNewTwit" class="btn btn-default">Добавить твит</button>
               </form>
-              {{ NewTwit }}
             </p>
           </div>
           <!--Блок фида-->
@@ -143,7 +142,7 @@ export default {
     return {
       Twits: [
         {
-          'message': 'Молодцы!'
+          'message': ''
         }
       ],
       NewTwit: {

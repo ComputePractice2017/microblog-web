@@ -31,10 +31,11 @@ import '../CSS/Styles.css'
                   </p>
               <form class="navbar-form navbar-left">
                 <div class="form-twit">
-                  <input type="text" class="caja tweet" placeholder="Что за новость?">
+                  <input type="text" v-model="NewTwit.message" class="caja tweet" placeholder="Что за новость?">
                 </div>
-                <button v-on:click="addnewtwit" class="btn btn-default">Добавить твит</button>
+                <button v-on:click="addNewTwit" class="btn btn-default">Добавить твит</button>
               </form>
+              {{ NewTwit }}
             </p>
           </div>
           <!--Блок фида-->
@@ -142,12 +143,21 @@ export default {
     return {
       Twits: [
         {
-          'message': 'Overlord'
-        },
-        {
-          'message': 'lord'
+          'message': 'Молодцы!'
         }
-      ]
+      ],
+      NewTwit: {
+        'message': ''
+      }
+    }
+  },
+  methods: {
+    addNewTwit: function () {
+      var obj = {
+        'message': ''
+      }
+      obj.message = this.NewTwit.message
+      this.Twits.push(obj)
     }
   }
 }

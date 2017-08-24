@@ -1,6 +1,6 @@
 import '../CSS/Styles.css'
 <template>
-  <div class="Users">
+  <div class="Profile">
     <div class="container-fluid" style="background-color:black;">
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
